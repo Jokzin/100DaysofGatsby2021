@@ -1,6 +1,7 @@
 import React from 'react'
 import { graphql } from 'gatsby'
 import get from 'lodash/get'
+import { Link } from "gatsby"
 
 class LocationTemplate extends React.Component {
   render() {
@@ -12,6 +13,9 @@ class LocationTemplate extends React.Component {
         <p>
             {location.description.description}
         </p>
+        <div className="uppercase font-mono text-gray-500 hover:text-green-900 hover:line-through">
+            <Link to="/locations/">Back</Link>
+        </div>
       </>
     )
   }
