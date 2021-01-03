@@ -6,7 +6,9 @@ export default function Layout({ children }) {
   return (
     <div>
       <Nav />
-      {children}
+      <div className="container px-28">
+        {children}
+      </div>
       <Footer />
     </div>
   )

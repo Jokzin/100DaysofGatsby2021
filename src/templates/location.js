@@ -7,12 +7,12 @@ class LocationTemplate extends React.Component {
     const location = get(this.props, 'data.contentfulLocation')
 
     return (
-      <div>
-            <h1>{location.city}</h1>
-            <p>
-                {location.description.description}
-            </p>
-      </div>
+      <>
+        <h1 className="text-green-900 font-bold font-mono uppercase text-5xl py-6">{location.city}</h1>
+        <p>
+            {location.description.description}
+        </p>
+      </>
     )
   }
 }
