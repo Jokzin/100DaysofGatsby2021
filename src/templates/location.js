@@ -9,7 +9,7 @@ class LocationTemplate extends React.Component {
 
         return (
             <>
-                <h1 className="text-green-900 font-bold font-mono uppercase text-5xl py-6">
+                <h1 className="">
                     {location.city}
                 </h1>
                 <div
@@ -19,7 +19,7 @@ class LocationTemplate extends React.Component {
                                 .childMarkdownRemark.html
                     }}
                 ></div>
-                <div className="uppercase font-mono text-gray-500 hover:text-green-900 hover:line-through">
+                <div className="">
                     <Link to="/locations/">Back</Link>
                 </div>
             </>

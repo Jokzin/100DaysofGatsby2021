@@ -4,9 +4,9 @@ import Footer from "./Footer"
 
 export default function Layout({ children }) {
   return (
-    <div className="h-screen relative">
+    <div className="">
       <Nav />
-      <div className="px-28">
+      <div className="">
         {children}
       </div>
       <Footer />
